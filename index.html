@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">Image Gallery</div>
+        <div class="controls">
+            <input type="text" id="search-input" placeholder="Search images...">
+            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- NEW: Category Filters -->
+        <div class="categories">
+            <button class="cat-btn active" data-category="all">All</button>
+            <button class="cat-btn" data-category="nature">Nature</button>
+            <button class="cat-btn" data-category="city">City</button>
+            <button class="cat-btn" data-category="animals">Animals</button>
+            <button class="cat-btn" data-category="objects">Objects</button>
+            <button class="cat-btn" data-category="favorites">❤️ Favorites</button>
+        </div>
+
+        <div id="gallery" class="gallery-grid"></div>
+        <div class="load-more-container">
+            <button id="load-more-btn">Load More Images</button>
+        </div>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" hidden>
+        <button class="nav-btn prev" id="prev-btn" aria-label="Previous image">❮</button>
+
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-info">
+                <p id="lightbox-caption" class="lightbox-caption"></p>
+                <div class="lightbox-actions">
+                    <span id="lightbox-counter" class="lightbox-counter"></span>
+                    <!-- NEW: Download & Share Buttons -->
+                    <a id="download-btn" class="action-btn" download aria-label="Download Image">⬇️</a>
+                    <button id="share-btn" class="action-btn" aria-label="Share Image">🔗</button>
+                    <button id="play-btn" class="action-btn" aria-label="Play Slideshow">▶️</button>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav-btn next" id="next-btn" aria-label="Next image">❯</button>
+        <button class="lightbox-close" id="close-btn" aria-label="Close preview">✕</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
