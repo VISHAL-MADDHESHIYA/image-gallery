@@ -11,16 +11,17 @@
 
 <body>
 
-    <header class="header">
-        <div class="logo">Image Gallery</div>
-        <div class="controls">
-            <input type="text" id="search-input" placeholder="Search images...">
-            <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+        <header class="header">
+        <!-- Pehli Line: Logo aur Search/Theme -->
+        <div class="header-top">
+            <div class="logo">Image Gallery</div>
+            <div class="controls">
+                <input type="text" id="search-input" placeholder="Search images...">
+                <button id="theme-toggle" aria-label="Toggle Theme">🌙</button>
+            </div>
         </div>
-    </header>
 
-    <main>
-        <!-- NEW: Category Filters -->
+        <!-- Dusri Line: Categories (Ab sticky hoga) -->
         <div class="categories">
             <button class="cat-btn active" data-category="all">All</button>
             <button class="cat-btn" data-category="nature">Nature</button>
@@ -29,7 +30,9 @@
             <button class="cat-btn" data-category="objects">Objects</button>
             <button class="cat-btn" data-category="favorites">❤️ Favorites</button>
         </div>
+    </header>
 
+    <main>
         <div id="gallery" class="gallery-grid"></div>
         <div class="load-more-container">
             <button id="load-more-btn">Load More Images</button>

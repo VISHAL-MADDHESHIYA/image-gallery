@@ -3,8 +3,8 @@
 A responsive, feature-rich, and accessible Image Gallery built entirely using Vanilla HTML, CSS, and JavaScript. This project was developed as part of the **Web Development Internship**.
 
 ## 🚀 Live Demo
-*   **Live Link:** [Insert your Vercel/Netlify/GitHub Pages link here]
-*   **GitHub Repo:** [Insert your GitHub repository link here]
+*   **Live Link:**(https://vishal-maddheshiya.github.io/image-gallery/)
+*   **GitHub Repo:**(https://github.com/VISHAL-MADDHESHIYA/image-gallery)
 
 ---
 
